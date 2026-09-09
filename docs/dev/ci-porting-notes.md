@@ -101,6 +101,14 @@ examine_globs = [
 additional_cargo_args = []
 ```
 
+## zghalint CI job
+
+Workflow linting currently uses `actionlint` and `zizmor`. Adding
+`watany-dev/zghalint@v0.0.1-rc.1` is deferred until that tag's GitHub Release
+publishes platform archives; the RC tag exists but the release workflow failed
+to attach assets (`gh release create` hit an already-created tag). The
+v0.0.1-rc.1 dogfood scorecard is `docs/dev/zghalint-dogfood.md`.
+
 ## crates.io
 
 chokkin is distributed via PyPI only (maturin `bin` bindings). Publishing to
